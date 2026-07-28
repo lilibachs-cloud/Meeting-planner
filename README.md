@@ -6,8 +6,12 @@ Appen kjøres fra nettleseren (Edge) og lagrer alle møteplaner i én delt fil i
 
 ## Oppsett (gjøres én gang av den som administrerer)
 
-1. Last opp `fagmote-planlegger.html` til dette GitHub-repoet.
-2. Gå til **Settings > Pages** i repoet, velg branch og mappe, og lagre. GitHub gir deg en offentlig lenke (f.eks. `https://brukernavn.github.io/repo-navn/fagmote-planlegger.html`).
+1. Last opp `index.html` til dette GitHub-repoet (filen må hete nøyaktig `index.html` for at GitHub Pages skal vise den automatisk på rot-lenken).
+2. Gå til **Settings > Pages** i repoet, velg branch og mappe, og lagre. GitHub gir deg en offentlig lenke, i dette tilfellet:
+
+   ```
+   https://lilibachs-cloud.github.io/Meeting-planner/
+   ```
 3. Del denne lenken med alle som skal bruke appen.
 
 ## Første gang du (som bruker) åpner appen
