@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fagmøte-planlegger – bruksanvisning</title>
+<style>
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #f4f3ef;
+    margin: 0;
+    padding: 24px;
+    color: #2c2c2a;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #ddd9cd; border-radius: 8px; padding: 32px 40px; }
+  a.back { display: inline-block; margin-bottom: 20px; font-size: 13px; color: #555; text-decoration: none; }
+  a.back:hover { text-decoration: underline; }
+  h1 { font-size: 24px; font-weight: 700; margin: 0 0 16px; }
+  h2 { font-size: 17px; font-weight: 700; margin: 32px 0 12px; border-bottom: 1px solid #eeece4; padding-bottom: 6px; }
+  p { margin: 0 0 14px; font-size: 14px; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; font-size: 14px; }
+  li { margin-bottom: 8px; }
+  li p { margin: 0 0 6px; }
+  code {
+    background: #f1efe8; border: 1px solid #ddd9cd; border-radius: 4px;
+    padding: 1px 5px; font-size: 13px; font-family: "SFMono-Regular", Consolas, monospace;
+  }
+  pre {
+    background: #f1efe8; border: 1px solid #ddd9cd; border-radius: 6px;
+    padding: 10px 14px; overflow-x: auto; margin: 0 0 14px;
+  }
+  pre code { background: none; border: none; padding: 0; }
+  blockquote {
+    margin: 0 0 14px; padding: 10px 16px; background: #faf6ee;
+    border-left: 3px solid #d8c9a3; border-radius: 0 6px 6px 0; font-size: 13.5px; color: #5c5347;
+  }
+  blockquote p { margin: 0; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← Tilbake til appen</a>
+<h1 id="fagmøte-planlegger">Fagmøte-planlegger</h1>
+<p>En app for å planlegge fagmøter med flere foredragsholdere. Tidspunkt
+oppdateres automatisk ut fra varighet, pause/lunsj-rader får egen farge,
+og den ferdige planen kan limes rett inn i Word.</p>
+<p>Appen kjøres fra nettleseren (Edge) og lagrer alle møteplaner i én
+delt fil i en intern nettverksmappe — ingen database eller pålogging er
+nødvendig.</p>
+<h2 id="oppsett-gjøres-én-gang-av-den-som-administrerer">Oppsett (gjøres
+én gang av den som administrerer)</h2>
+<ol type="1">
+<li><p>Last opp <code>index.html</code> til dette GitHub-repoet (filen
+må hete nøyaktig <code>index.html</code> for at GitHub Pages skal vise
+den automatisk på rot-lenken).</p></li>
+<li><p>Gå til <strong>Settings &gt; Pages</strong> i repoet, velg branch
+og mappe, og lagre. GitHub gir deg en offentlig lenke, i dette
+tilfellet:</p>
+<pre><code>https://lilibachs-cloud.github.io/Meeting-planner/</code></pre></li>
+<li><p>Del denne lenken med alle som skal bruke appen.</p></li>
+</ol>
+<h2 id="første-gang-du-som-bruker-åpner-appen">Første gang du (som
+bruker) åpner appen</h2>
+<ol type="1">
+<li><p>Åpne lenken i <strong>Edge</strong>.</p></li>
+<li><p>Skriv inn navnet ditt øverst i feltet <strong>«Ditt
+navn»</strong> — det brukes til å vise hvem som redigerer en
+plan.</p></li>
+<li><p>Trykk <strong>«📁 Koble til mappe»</strong> og velg denne
+mappen:</p>
+<pre><code>K:\Sensitivt\Klinikk\RMF_Kvalitetssikring\Meeting planner</code></pre>
+<p>(Samme mappe skal velges av alle brukere.)</p></li>
+<li><p>Godkjenn tilgang når Edge spør. Etter dette husker nettleseren
+valget på din PC, så du slipper å gjøre det på nytt neste gang du åpner
+lenken.</p></li>
+</ol>
+<blockquote>
+<p>Alle må gjøre steg 2–4 hver for seg, på sin egen PC — tilgangen deles
+ikke automatisk mellom kolleger.</p>
+</blockquote>
+<h2 id="personlig-mappe-eller-delt-mappe-du-velger-selv">Personlig mappe
+eller delt mappe — du velger selv</h2>
+<p>Appen har ingen fast, innebygd mappe. Hver bruker velger selv hvilken
+mappe de kobler seg til når de trykker <strong>«📁 Koble til
+mappe»</strong>, og det kan tilpasses hvordan dere faktisk jobber:</p>
+<ul>
+<li><strong>Samarbeidsprosjekter</strong>: koble deg til en felles mappe
+(f.eks. <code>Meeting planner</code>-mappen nevnt over) som du og
+kollegene dine har tilgang til sammen. Da ser og redigerer dere de samme
+planene.</li>
+<li><strong>Egne, private prosjekter</strong>: koble deg i stedet til en
+personlig mappe (f.eks. din egen lokale mappe eller OneDrive-mappe). Da
+blir planene dine private — ingen andre ser dem.</li>
+<li><strong>Bytte fram og tilbake</strong>: du kan når som helst trykke
+«📁 Koble til mappe» igjen og velge en annen mappe. Appen husker alltid
+kun <strong>den sist tilkoblede mappen</strong> — ikke flere samtidig —
+så husk å bytte tilbake til riktig mappe før du begynner å jobbe med et
+annet prosjekt.</li>
+<li>Mappe-indikatoren øverst i appen viser til enhver tid tydelig
+hvilken mappe du er koblet til akkurat nå, slik at du ikke er i
+tvil.</li>
+</ul>
+<blockquote>
+<p>Tips: Hvis en gruppe kolleger ikke har tilgang til den samme mappen
+som en annen gruppe, kan de rett og slett opprette sin egen felles mappe
+et sted de <em>har</em> tilgang sammen, og koble seg til den i stedet.
+Det krever ingen endring i selve appen.</p>
+</blockquote>
+<h2 id="daglig-bruk">Daglig bruk</h2>
+<ul>
+<li><strong>Ny plan</strong>: trykk «+ Ny plan», fyll inn møtetittel,
+starttidspunkt og legg til rader for foredrag eller pause/lunsj.</li>
+<li><strong>Varighet</strong> styrer automatisk tidspunktene i kolonnen
+til venstre.</li>
+<li><strong>Dra rader</strong> med ☰-håndtaket for å endre
+rekkefølgen.</li>
+<li><strong>Lagre</strong> skriver planen til den delte filen
+<code>fagmoteplaner.json</code> i nettverksmappen — synlig for alle
+andre med tilgang.</li>
+<li><strong>Åpne</strong> henter en tidligere lagret plan fra
+listen.</li>
+<li><strong>Kopier for Word</strong>: kopierer tabellen til
+utklippstavlen, klar til å limes inn i et Word-dokument med Ctrl+V.
+Merknad-kolonnen kan skrus av før kopiering.</li>
+</ul>
+<h2 id="om-samtidig-redigering">Om samtidig redigering</h2>
+<p>Når du åpner en plan, merkes den som «opptatt» av deg. Hvis en
+kollega prøver å åpne samme plan mens du redigerer, får de et varsel om
+at den er i bruk, med ditt navn og klokkeslett for når du sist var
+aktiv. Låsen fornyes automatisk hvert 20. sekund mens du har planen
+åpen, og slippes når du lagrer, bytter plan eller lukker fanen. Blir en
+fane lukket brått, løser låsen seg selv opp igjen etter 3 minutter.</p>
+<p>Dette er en <strong>myk advarsel</strong>, ikke en absolutt sperre —
+to personer kan i teorien fortsatt lagre over hverandre hvis de velger å
+ignorere varselet. Snakk sammen internt om det, spesielt hvis flere
+pleier å redigere samme plan samtidig.</p>
+<h2 id="feilsøking">Feilsøking</h2>
+<ul>
+<li><strong>«Koble til mappe»-knappen dukker opp igjen etter en
+stund</strong>: Edge har glemt tilgangen — bare trykk knappen og velg
+mappen på nytt.</li>
+<li><strong>Andre nettlesere enn Edge/Chrome</strong>: Appen bruker en
+funksjon (File System Access API) som foreløpig kun støttes av
+Chromium-baserte nettlesere. Safari og Firefox fungerer ikke.</li>
+<li><strong>Ser ikke andres planer</strong>: Sjekk at dere har koblet
+dere til nøyaktig samme mappe (samme sti).</li>
+</ul>
+</div>
+</body>
+</html>
